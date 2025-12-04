@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Glowing border */
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.7);
+}
+
