@@ -1,0 +1,7 @@
+.navbar { display: flex; justify-content: space-between; padding: 1rem 2rem; background: #333; color: white; }
+.navbar-brand a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
+.navbar-links { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
+.navbar-links a { color: white; text-decoration: none; }
+.navbar-links a:hover { color: #ccc; }
+.navbar-toggle { display: none; flex-direction: column; cursor: pointer; }
+.navbar-toggle span { height: 3px; width: 25px; background: white; margin: 4px 0; border-radius: 2px; }
