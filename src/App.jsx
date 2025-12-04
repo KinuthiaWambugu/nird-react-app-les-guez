@@ -9,6 +9,7 @@ import './App.css'
 
 function App() {
 
+function App(){
   return (
     <div className="app">
       <Navbar />
@@ -25,4 +26,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

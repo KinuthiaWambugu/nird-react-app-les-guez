@@ -1,11 +1,12 @@
 import React from "react";
+import ThreeJSScene from "../components/home/ThreeJSScene"
 
-const Home = () => {
+const Home = () =>{
     return (
         <div>
-            <h1>Welcome to the Home Page</h1>
+            <ThreeJSScene />
         </div>
-    );
+    )
 }
 
 export default Home;
