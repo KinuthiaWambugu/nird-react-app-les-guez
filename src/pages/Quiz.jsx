@@ -1,9 +1,10 @@
 import React from "react";
+import NirdQuiz from "../components/quiz"; 
 
 const Quiz = () => {
     return (
         <div>
-            <h1>Welcome to the quiz Page</h1>
+            <NirdQuiz />
         </div>
     );
 }

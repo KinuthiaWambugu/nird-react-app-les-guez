@@ -2,34 +2,28 @@ import React, { useState, useRef, useEffect } from "react";
 
 const items = [
   {
-    title: "Feature One",
-    image: "/img1.png",
-    description: "This is a detailed explanation of feature one.",
+    title: "Pourquoi résister aux géants de la tech ?",
+    image: "/public/features/big tech.png",
+    description: "Les écoles sont structurellement dépendantes des Big Tech, confrontées à l'obsolescence matérielle, aux licences coûteuses, au stockage de données hors UE et aux écosystèmes fermés.",
     link: "/learn-more-1",
   },
   {
-    title: "Feature Two",
-    image: "/img2.png",
-    description: "Here you learn more about feature two and what it does.",
-    link: "/learn-more-2",
+    title: "Principes du NIRD: Inclusion / Responsabilité / Durabilité",
+    image: "/public/features/nird.jpeg",
+    description: " La démarche NIRD repose sur trois piliers qui guident l'ensemble des actions menées : Inclusif, Responsabilité et Durabilité.",
+    link: "https://nird.forge.apps.education.fr/",
   },
   {
-    title: "Feature Three",
-    image: "/img3.png",
-    description: "This feature helps you do amazing things quickly.",
-    link: "/learn-more-3",
+    title: "Ce que votre école peut faire",
+    image: "/public/features/school.jpg",
+    description: "  Les écoles peuvent rejoindre le mouvement en se concentrant sur des activités clés : Lire le projet du Lycée Carnot de Bruay-Labuissière",
+    link:"https://nird.forge.apps.education.fr/pilotes/0620056z.html"
   },
   {
     title: "Feature Four",
     image: "/img4.png",
     description: "A simple description about feature four.",
     link: "/learn-more-4",
-  },
-  {
-    title: "Feature Five",
-    image: "/img5.png",
-    description: "A simple description about feature five.",
-    link: "/learn-more-5",
   },
 ];
 
@@ -84,7 +78,7 @@ const FeatureCircleGrid = () => {
                 >
                   <div
                     className={`
-                      rounded-full p-1 transition-all duration-300
+                      rounded-full p-2 border-4 border-white transition-all duration-300
                       ${isOpen ? "ring-4 ring-cyan-400 shadow-cyan-400 shadow-glow" : ""}
                     `}
                   >
@@ -92,7 +86,7 @@ const FeatureCircleGrid = () => {
                       src={item.image}
                       alt={item.title}
                       className={`
-                        rounded-full object-cover transition-all duration-300 hover:scale-105
+                        rounded-full object-contain transition-all duration-300 hover:scale-105
                         ${isOpen ? "w-24 h-24" : "w-32 h-32"}
                       `}
                     />

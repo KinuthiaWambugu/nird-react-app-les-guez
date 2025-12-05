@@ -15,20 +15,21 @@ const Hero = () => {
           <div className="space-y-6">
             <div className="border-2 border-transparent rounded-lg p-8 bg-slate-800/30 backdrop-blur-sm">
               <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
-                Welcome to{" "}
+                Libérez votre établissement scolaire{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
-                  Le Village Numérique Résistant
+                de la dépendance aux Big Tech.
                 </span>
               </h1>
               <p className="text-lg text-black-300">
-                Embarquez pour un voyage éducatif extraordinaire, propulsé par une technologie innovante et des expériences immersives.
+                      La fin de Windows 10 révèle la dépendance des écoles aux Big Tech : matériel obsolète, licences coûteuses et données hors UE. 
+                      La démarche <strong>NIRD</strong> permet d’adopter un numérique inclusif et durable, en réduisant progressivement ces dépendances.
               </p>
             </div>
 
             {/* CTA */}
             <div className="border-2 border-transparent rounded-lg p-6 bg-slate-800/30 backdrop-blur-sm flex justify-center">
               <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-12 rounded-lg transition transform hover:scale-105 shadow-lg text-lg">
-                Get Started
+                Rejoignez la démarche NIRD
               </button>
             </div>
           </div>
