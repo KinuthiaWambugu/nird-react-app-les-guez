@@ -4,7 +4,7 @@ import Footer from './components/footer';
 import Home from './pages/Home';
 import DigitalVillage from './pages/DigitalVillage';
 import Quiz from './pages/Quiz';
-import NIRD from './pages/NIRD';
+import NirdChat from './pages/NIRD';
 import './App.css'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/digital_village" element={<DigitalVillage />} />
           <Route path="/quiz" element={<Quiz />} />
-          <Route path="/nird" element={<NIRD />} />
+          <Route path="/nird" element={<NirdChat />} />
         </Routes>
         </main>  
         <Footer />      

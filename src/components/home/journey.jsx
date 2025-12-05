@@ -19,12 +19,6 @@ const items = [
     description: "  Les écoles peuvent rejoindre le mouvement en se concentrant sur des activités clés : Lire le projet du Lycée Carnot de Bruay-Labuissière",
     link:"https://nird.forge.apps.education.fr/pilotes/0620056z.html"
   },
-  {
-    title: "Feature Four",
-    image: "/img4.png",
-    description: "A simple description about feature four.",
-    link: "/learn-more-4",
-  },
 ];
 
 const FeatureCircleGrid = () => {
@@ -65,8 +59,8 @@ const FeatureCircleGrid = () => {
       `}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
-          {items.map((item, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center">
+          {items.slice(0,3).map((item, index) => {
             const isOpen = openIndex === index;
 
             return (
@@ -78,7 +72,7 @@ const FeatureCircleGrid = () => {
                 >
                   <div
                     className={`
-                      rounded-full p-2 border-4 border-white transition-all duration-300
+                      rounded-full p-3 border-4 border-white transition-all duration-300
                       ${isOpen ? "ring-4 ring-cyan-400 shadow-cyan-400 shadow-glow" : ""}
                     `}
                   >
@@ -86,8 +80,8 @@ const FeatureCircleGrid = () => {
                       src={item.image}
                       alt={item.title}
                       className={`
-                        rounded-full object-contain transition-all duration-300 hover:scale-105
-                        ${isOpen ? "w-24 h-24" : "w-32 h-32"}
+                        rounded-full object-fill transition-all duration-300 hover:scale-105
+                        ${isOpen ? "w-36 h-36" : "w-40 h-40"}
                       `}
                     />
                   </div>
@@ -106,7 +100,7 @@ const FeatureCircleGrid = () => {
                     href={item.link}
                     className="text-cyan-400 hover:underline text-sm mt-2 block"
                   >
-                    Learn more →
+                    En savoir plus →
                   </a>
                 </div>
               </div>
