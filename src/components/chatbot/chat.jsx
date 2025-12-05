@@ -28,7 +28,7 @@ const Chat = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: messageText , settings: {
-            prompt:"Jean-Michel Profond, philisophe du dimanche...",
+            prompt:"Jean-Michel Profond, philosophe du dimanche...",
             length:"medium",
             chaos:70
         } }),
