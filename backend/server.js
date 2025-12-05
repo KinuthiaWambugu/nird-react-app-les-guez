@@ -9,7 +9,22 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+const allowedOrigins = (process.env.CORS_ORIGINS || "")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+if (allowedOrigins.length > 0) {
+  app.use(
+    cors({
+      origin: allowedOrigins,
+    })
+  );
+} else {
+  // Fallback to permissive CORS if no explicit origins are configured
+  app.use(cors());
+}
+
 app.use(express.json());
 
 // Routes
